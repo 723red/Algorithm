@@ -1,5 +1,7 @@
 #include <stdio.h>
 int main(void){
 
- printf("123123");
+ printf("1");
+
+
 }
