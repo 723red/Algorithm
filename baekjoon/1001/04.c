@@ -1,20 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void return_arr(int *arr, int len){
-   for(int i=0; i<len; i++){
-    *(arr+i) = i;
-    printf("%d", *(arr+i));
+int factorial(int n){
+   
+   if(n<=1){
+      return 1;
    }
-    
-
+   else{
+    return n * factorial(n-1); 
+   }
 }
 
-int main(){
- int arr[30] = {0};
- int n;
- scanf("%d", &n);
-  return_arr(arr, n);
+
+int main(void){
+ 
+
+
+   //가장 끝의 0의 개수가 1개인   5팩 120  //        12*(2*5)
+   // 가장 끝의 0의 개수가 2개인   15팩 10! * 11*12*13*14*15   *(2*5)*(2*5)
+
+   int a;
+
+   scanf("%d",&a);
+
+
+   printf("%d", factorial(a));
+
 
 
 }
